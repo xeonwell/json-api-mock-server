@@ -1,0 +1,12 @@
+{
+  "user": "asdf",
+  "password": "kjkjkjk",
+  "aa": "<%= query.aa %>",
+  "random": "<%= Math.random() %>",
+  "list": [
+  <% [1, 2, 3, 4, 5].forEach(function(item, index){ %>
+    {"a": "<%= index %>", "b": <%= item %>},
+  <% }) %>
+    {"a": "5", "b": 6}
+  ]
+}
