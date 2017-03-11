@@ -4,9 +4,10 @@
 - ejs文件为输出为json，暂不支持输出html， 支持ejs语法，支付js函数，扩展函数需额外编码
 - config.js可以配置是否开启mock、接口调用成功率、代理服务器地址等
 - mock目录按api地址路径存放如users/test.ejs 对应的api请求为//host:port/users/test?aa=bbcd
+- 可以配置环境变量PORT和PROXY_TARGET改变端口和代理地址
 - 默认监听端口为8989
 
 ### how to use
-- ```npm install``` or ```npm update```
+- ```npm install```
 - ```npm start```
 

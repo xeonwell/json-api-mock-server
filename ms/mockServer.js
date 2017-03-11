@@ -30,7 +30,7 @@ module.exports = function (req, res, next) {
 
   if (objUrl && objUrl.pathname && objUrl.pathname.length > 0) {
     mockUrlHandler(objUrl, req).then(function (json) {
-      debug('find mock json, output...');
+      debug('mock json found, output...');
       res.json(funcs.success(json))
     }).catch(function (error) {
       // debug('not found, ~> proxy');
